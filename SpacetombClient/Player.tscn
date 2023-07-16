@@ -1,0 +1,33 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Player.gd" type="Script" id=1]
+[ext_resource path="res://playertestersprite.png" type="Texture" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 18, 27 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 18, 27 )
+
+[node name="Player" type="KinematicBody2D"]
+collision_mask = 26
+script = ExtResource( 1 )
+shotSpeed = 30
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0, -9 )
+shape = SubResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 2 )
+offset = Vector2( 3, -10 )
+
+[node name="DetectorPlayer" type="Area2D" parent="."]
+
+[node name="DetectorShapeP" type="CollisionShape2D" parent="DetectorPlayer"]
+position = Vector2( 0, -9 )
+shape = SubResource( 2 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+process_mode = 0

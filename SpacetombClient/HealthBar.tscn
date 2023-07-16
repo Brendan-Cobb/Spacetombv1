@@ -1,0 +1,25 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://HealthBar.gd" type="Script" id=1]
+
+[sub_resource type="Gradient" id=1]
+colors = PoolColorArray( 0.917969, 0, 0, 1, 0.695313, 0, 0, 1 )
+
+[sub_resource type="GradientTexture2D" id=2]
+gradient = SubResource( 1 )
+
+[sub_resource type="Gradient" id=3]
+colors = PoolColorArray( 0, 1, 0.109375, 1, 0.0371704, 0.679688, 0.107446, 1 )
+
+[sub_resource type="GradientTexture2D" id=4]
+gradient = SubResource( 3 )
+
+[node name="HealthBar" type="TextureProgress"]
+margin_left = 19.0
+margin_top = 14.0
+margin_right = 233.0
+margin_bottom = 54.0
+texture_under = SubResource( 2 )
+texture_progress = SubResource( 4 )
+nine_patch_stretch = true
+script = ExtResource( 1 )

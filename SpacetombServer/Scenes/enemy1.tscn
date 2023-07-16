@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Scenes/enemy1.gd" type="Script" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 24.3542, 25.2917 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 27, 29 )
+
+[node name="Enemy1" type="KinematicBody2D"]
+collision_layer = 4
+collision_mask = 7
+script = ExtResource( 1 )
+
+[node name="DetectorEnemy1" type="Area2D" parent="."]
+scale = Vector2( 1.5, 1.5 )
+collision_layer = 0
+
+[node name="DetectorShapeE1" type="CollisionShape2D" parent="DetectorEnemy1"]
+shape = SubResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 2 )
