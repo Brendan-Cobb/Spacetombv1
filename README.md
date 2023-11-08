@@ -9,14 +9,14 @@ There are two components to Spacetomb, the client code, and the server code. The
 
 At the end of our development period, Spacetomb had the following features:
 
-  -Player movement physics system
-  -Player shooting projectiles
-  -Multiple players connecting and interacting in the same lobby
-  -Joining, leaving, disconnecting, reconnecting etc.
-  -Multiple simultaneous lobbies/ matchmaking
-  -Main menu scene
-  -Player vs Player Combat
-  -Enemies which tracked and seeked out the nearest player
-  -Player vs Enemy Combat
+  -Player movement physics system\
+  -Player shooting projectiles\
+  -Multiple players connecting and interacting in the same lobby\
+  -Joining, leaving, disconnecting, reconnecting etc\
+  -Multiple simultaneous lobbies/ matchmaking\
+  -Main menu scene\
+  -Player vs Player Combat\
+  -Enemies which tracked and seeked out the nearest player\
+  -Player vs Enemy Combat\
   -Randomly Generated map / room layout
   
